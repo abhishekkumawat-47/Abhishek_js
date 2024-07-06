@@ -3,9 +3,7 @@ cross = true;
 audio = new Audio('bg.mp3');
 audiogo = new Audio('go_01.mp3');
 
-setTimeout(() => {
-    audio.play()
-}, 1000);
+
 
 
 
@@ -27,7 +25,9 @@ document.onkeydown = function(e){
         dx = parseInt(window.getComputedStyle(boy,null).getPropertyValue('left'))
         boy.style.left = (dx - 152) + "px";
       }
-    
+    setTimeout(() => {
+    audio.play()
+    }, 1000);
     
     
 }
